@@ -1,0 +1,10 @@
+// 模拟赌徒脑电波（β波降低）
+const addictEEG = new BioLab.SignalGenerator({ 
+  frequency: 12, // 低频β波 
+  amplitude: 0.3 // 波幅紊乱
+});
+// 模拟创作者脑电波（β波增强）
+const creatorEEG = new BioLab.SignalGenerator({
+  frequency: 22, 
+  amplitude: 0.8
+});
